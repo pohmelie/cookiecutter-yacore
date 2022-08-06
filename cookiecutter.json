@@ -1,0 +1,8 @@
+{
+    "project_name": "new-project",
+    "module_name": "{{ cookiecutter.project_name | replace('-', '_') }}",
+    "env_prefix": "{{ cookiecutter.project_name | replace('-', '_') | upper }}",
+    "service_class_name": "{% for part in (cookiecutter.project_name + '-service').split('-') %}{{part | capitalize }}{% endfor %}",
+    "version": "0.1.0",
+    "python_version": "3.10.5"
+}

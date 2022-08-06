@@ -1,0 +1,7 @@
+[run]
+source =
+    {{ cookiecutter.module_name }}
+omit =
+    {{ cookiecutter.module_name }}/__main__.py
+[report]
+show_missing = True
