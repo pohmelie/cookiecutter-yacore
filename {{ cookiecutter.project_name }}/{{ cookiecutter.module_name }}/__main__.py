@@ -18,6 +18,6 @@ def main(config):
 
 
 options = []
-entrypoint = build_entrypoint(main, options, auto_envvar_prefix="{{ cookiecutter.env_prefix }}_SERVICE", show_default=True)
+entrypoint = build_entrypoint(main, *options, auto_envvar_prefix="{{ cookiecutter.env_prefix }}_SERVICE", show_default=True)
 if __name__ == "__main__":
     entrypoint(prog_name="{{ cookiecutter.project_name }}-service")
